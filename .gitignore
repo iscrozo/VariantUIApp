@@ -1,0 +1,43 @@
+# Xcode
+.DS_Store
+xcuserdata/
+
+# Swift Package Manager
+.build/
+
+# CocoaPods
+Pods/
+*.lock
+
+# Carthage
+Carthage/Checkouts
+Carthage/Build
+
+# Acciones y configuraciones de Xcode
+*.xcodeproj/xcuserdata/
+*.xcworkspace/xcuserdata/
+!*.xcodeproj/xcuserdata/xcshareddata/
+!*.xcworkspace/xcuserdata/xcshareddata/
+*.xcuserstate
+
+# Derivados y caché
+DerivedData/
+build/
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+*.xcuserstate
+*xcuserdata
+*.moved-aside
+*.xccheckout
+*.xcscmblueprint
+xcshareddata/
+*.swiftpm/
+.Package.resolved
+.vscode/
+.idea/
+
+# Xcode de Swift
+.build/
+Package.resolved

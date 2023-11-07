@@ -11,6 +11,8 @@
 		7624876A2AF9E0E400350842 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762487692AF9E0E400350842 /* ContentView.swift */; };
 		7624876C2AF9E0E500350842 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7624876B2AF9E0E500350842 /* Assets.xcassets */; };
 		7624876F2AF9E0E500350842 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7624876E2AF9E0E500350842 /* Preview Assets.xcassets */; };
+		762487782AF9E18500350842 /* VariantShapesViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762487772AF9E18500350842 /* VariantShapesViews.swift */; };
+		7624877C2AF9E55E00350842 /* Extension+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7624877B2AF9E55E00350842 /* Extension+Color.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		762487692AF9E0E400350842 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7624876B2AF9E0E500350842 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7624876E2AF9E0E500350842 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		762487772AF9E18500350842 /* VariantShapesViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VariantShapesViews.swift; sourceTree = "<group>"; };
+		7624877B2AF9E55E00350842 /* Extension+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Color.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +56,8 @@
 			isa = PBXGroup;
 			children = (
 				762487672AF9E0E400350842 /* VariantUIApp.swift */,
-				762487692AF9E0E400350842 /* ContentView.swift */,
+				762487792AF9E54300350842 /* Extensions */,
+				762487752AF9E16800350842 /* Views */,
 				7624876B2AF9E0E500350842 /* Assets.xcassets */,
 				7624876D2AF9E0E500350842 /* Preview Content */,
 			);
@@ -65,6 +70,47 @@
 				7624876E2AF9E0E500350842 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		762487752AF9E16800350842 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7624877D2AF9E8A600350842 /* ContentView */,
+				762487762AF9E17400350842 /* Shapes */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		762487762AF9E17400350842 /* Shapes */ = {
+			isa = PBXGroup;
+			children = (
+				762487772AF9E18500350842 /* VariantShapesViews.swift */,
+			);
+			path = Shapes;
+			sourceTree = "<group>";
+		};
+		762487792AF9E54300350842 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7624877A2AF9E54B00350842 /* Color */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		7624877A2AF9E54B00350842 /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				7624877B2AF9E55E00350842 /* Extension+Color.swift */,
+			);
+			path = Color;
+			sourceTree = "<group>";
+		};
+		7624877D2AF9E8A600350842 /* ContentView */ = {
+			isa = PBXGroup;
+			children = (
+				762487692AF9E0E400350842 /* ContentView.swift */,
+			);
+			path = ContentView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +185,8 @@
 			files = (
 				7624876A2AF9E0E400350842 /* ContentView.swift in Sources */,
 				762487682AF9E0E400350842 /* VariantUIApp.swift in Sources */,
+				762487782AF9E18500350842 /* VariantShapesViews.swift in Sources */,
+				7624877C2AF9E55E00350842 /* Extension+Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
