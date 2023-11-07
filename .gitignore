@@ -41,3 +41,6 @@ xcshareddata/
 # Xcode de Swift
 .build/
 Package.resolved
+
+# file with _
+._*
