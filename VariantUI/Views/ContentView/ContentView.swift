@@ -48,27 +48,33 @@ extension ContentView {
             .padding(.leading, 10)
     }
     
-    func shapesSection() -> some View {
-        VStack (alignment: .leading, spacing: 10, content: {
-            titleSection("Shape Colors")
-            ScrollView(.horizontal) {
-                HStack(spacing: 2) {
-                    VariantShapesViews()
-                }
-            }
-        })
+    func customContainerView<Content: View>(@ViewBuilder content: @escaping () -> Content) -> some View {
+        VStack(alignment: .leading, spacing: 10) {
+            content()
+        }
         .frame(maxWidth: .infinity)
         .background(Color.white)
         .cornerRadius(10)
         .shadow(radius: 5)
-        
+    }
+    
+    func shapesSection() -> some View {
+        customContainerView {
+            titleSection("Shape Colors")
+            ScrollView(.horizontal) {
+                HStack(spacing: 5) {
+                    VariantShapesViews()
+                }
+            }
+        }
     }
     
     func buttonSection() -> some View {
-        VStack(alignment: .leading, spacing: 10) {
+        
+        customContainerView {
             titleSection("Buttons")
             ScrollView(.horizontal) {
-                HStack(spacing: 10) {
+                HStack(spacing: 5) {
                     VariantButtonsView.getVariantButton(.padded, action: {
                         print("button Padded")
                     }, label: "Button 1", backgroundColor: .green)
@@ -88,22 +94,23 @@ extension ContentView {
                     VariantButtonsView.getVariantButton(.standard, action: {
                         print("button shadowed")
                     }, label: "Button 5", backgroundColor: .random)
-                    
-                    
                 }
             }
         }
-        .frame(maxWidth: .infinity)
-        .background(Color.white)
-        .cornerRadius(10)
-        .shadow(radius: 5)
     }
     
     func cardSection() -> some View {
-        VStack(alignment: .leading, spacing: 10) {
-            titleSection("Cards")
+        
+        customContainerView {
+            titleSection("Shape Colors")
             ScrollView(.horizontal) {
-                HStack(spacing: 10) {
+                HStack(spacing: 5) {
+                    VariantCardView(
+                        title: "Lorem ipsum",
+                        description: "Duis aute irure dolor in reprehenderit in \n voluptate velit esse cillum dolore \neu fugiat nulla pariatur",
+                        content: "Lorem ipsum dolor sit amet ",
+                        footer: "Inspired by Ciceron"
+                    )
                     VariantCardView(
                         title: "Variante con fondo azul",
                         description: "Descripción en azul",
@@ -126,13 +133,12 @@ extension ContentView {
                         contentColor: .black,
                         footerColor: .white
                     )
+                    
                 }
             }
         }
-        .frame(maxWidth: .infinity)
-        .background(Color.white)
-        .cornerRadius(10)
-        .shadow(radius: 5)
+        
+        
     }
 }
 
