@@ -13,6 +13,7 @@
 		7624876F2AF9E0E500350842 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7624876E2AF9E0E500350842 /* Preview Assets.xcassets */; };
 		762487782AF9E18500350842 /* VariantShapesViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762487772AF9E18500350842 /* VariantShapesViews.swift */; };
 		7624877C2AF9E55E00350842 /* Extension+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7624877B2AF9E55E00350842 /* Extension+Color.swift */; };
+		76ADCD242AFC814400468A79 /* VariantButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76ADCD232AFC814400468A79 /* VariantButtonsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		7624876E2AF9E0E500350842 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		762487772AF9E18500350842 /* VariantShapesViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VariantShapesViews.swift; sourceTree = "<group>"; };
 		7624877B2AF9E55E00350842 /* Extension+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Color.swift"; sourceTree = "<group>"; };
+		76ADCD232AFC814400468A79 /* VariantButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VariantButtonsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 		762487752AF9E16800350842 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				76ADCD222AFC812D00468A79 /* Buttons */,
 				7624877D2AF9E8A600350842 /* ContentView */,
 				762487762AF9E17400350842 /* Shapes */,
 			);
@@ -111,6 +114,14 @@
 				762487692AF9E0E400350842 /* ContentView.swift */,
 			);
 			path = ContentView;
+			sourceTree = "<group>";
+		};
+		76ADCD222AFC812D00468A79 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				76ADCD232AFC814400468A79 /* VariantButtonsView.swift */,
+			);
+			path = Buttons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -186,6 +197,7 @@
 				7624876A2AF9E0E400350842 /* ContentView.swift in Sources */,
 				762487682AF9E0E400350842 /* VariantUIApp.swift in Sources */,
 				762487782AF9E18500350842 /* VariantShapesViews.swift in Sources */,
+				76ADCD242AFC814400468A79 /* VariantButtonsView.swift in Sources */,
 				7624877C2AF9E55E00350842 /* Extension+Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

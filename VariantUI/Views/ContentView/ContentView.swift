@@ -14,7 +14,8 @@ struct ContentView: View {
                 VStack (alignment: .leading, spacing: 30) {
                     headerSection()
                     shapesSection()
-                }
+                    buttonSection()
+                }.padding(.horizontal,10)
             }
         }
     }
@@ -34,23 +35,67 @@ extension ContentView {
         }
         .font(.title)
         .fontWeight(.medium)
+        .padding(.horizontal)
+        .frame(maxWidth: .infinity)
+    }
+    
+    func titleSection(_ title: String) -> some View {
+        Text(title)
+            .font(.title2)
+            .fontWeight(.medium)
+            .padding(.top, 10)
+            .padding(.leading, 10)
     }
     
     func shapesSection() -> some View {
         VStack (alignment: .leading, spacing: 10, content: {
-            Text("Shape Colors")
-                .font(.title2)
-                .fontWeight(.medium)
-                .padding(.top, 10)
-            HStack {
-                VariantShapesViews()
+            titleSection("Shape Colors")
+            ScrollView(.horizontal) {
+                HStack(spacing: 2) {
+                    VariantShapesViews()
+                }
             }
         })
-        .padding(EdgeInsets(top: 10, leading: 10, bottom: 10, trailing: 10))
+        .frame(maxWidth: .infinity)
         .background(Color.white)
         .cornerRadius(10)
         .shadow(radius: 5)
 
+    }
+    
+    func buttonSection() -> some View {
+        VStack(alignment: .leading, spacing: 10) {
+            titleSection("Buttons")
+            ScrollView(.horizontal) {
+                HStack(spacing: 10) {
+                    VariantButtonsView.getVariantButton(.padded, action: {
+                        print("button Padded")
+                    }, label: "Button 1", backgroundColor: .green)
+                    
+                    VariantButtonsView.getVariantButton(.loading, action: {
+                        print("button loading")
+                    }, label: "Button 2", backgroundColor: .random)
+                    
+                    VariantButtonsView.getVariantButton(.shadowed, action: {
+                        print("button shadowed")
+                    }, label: "Button 3", backgroundColor: .blue)
+                    
+                    VariantButtonsView.getVariantButton(.rounded, action: {
+                        print("button rounded")
+                    }, label: "Button 4", backgroundColor: .red)
+                  
+                    VariantButtonsView.getVariantButton(.standard, action: {
+                        print("button shadowed")
+                    }, label: "Button 5", backgroundColor: .random)
+                    
+                    
+                }
+            }
+        }
+        .frame(maxWidth: .infinity)
+        .background(Color.white)
+        .cornerRadius(10)
+        .shadow(radius: 5)
     }
 }
 

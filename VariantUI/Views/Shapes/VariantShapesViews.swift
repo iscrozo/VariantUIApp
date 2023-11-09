@@ -12,6 +12,8 @@ struct VariantShapesViews: View {
         HStack {
             ForEach(0..<5) { _ in
                 VariantShapesRandomView()
+                    .padding(.horizontal, 5)
+                    .padding(.vertical, 5)
             }
         }
     }
