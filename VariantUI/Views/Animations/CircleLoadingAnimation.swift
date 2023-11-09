@@ -59,25 +59,25 @@ struct CircleLoadingAnimation: View {
                 buildRing(index: 2, isAnimating: $threeCircle)
                 
                 // 3
-                buildRing(index: 4, isAnimating: $fourCircle)
+                buildRing(index: 3, isAnimating: $fourCircle)
                 
                 // 4
-                buildRing(index: 5, isAnimating: $fiveCircle)
+                buildRing(index: 4, isAnimating: $fiveCircle)
                 
                 // 5
-                buildRing(index: 6, isAnimating: $sixCircle)
+                buildRing(index: 5, isAnimating: $sixCircle)
                 
                 // 6
-                buildRing(index: 7, isAnimating: $sevenCircle)
+                buildRing(index: 6, isAnimating: $sevenCircle)
                 
                 // 7
-                buildRing(index: 8, isAnimating: $eightCircle)
+                buildRing(index: 7, isAnimating: $eightCircle)
                 
                 // 8
-                buildRing(index: 9, isAnimating: $nineCircle)
+                buildRing(index: 8, isAnimating: $nineCircle)
                 
                 // 9
-                buildRing(index: 10, isAnimating: $tenCircle)
+                buildRing(index: 9, isAnimating: $tenCircle)
             }
             .padding()
         }
