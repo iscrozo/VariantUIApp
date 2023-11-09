@@ -15,6 +15,7 @@ struct ContentView: View {
                     headerSection()
                     shapesSection()
                     buttonSection()
+                    cardSection()
                 }.padding(.horizontal,10)
             }
         }
@@ -60,7 +61,7 @@ extension ContentView {
         .background(Color.white)
         .cornerRadius(10)
         .shadow(radius: 5)
-
+        
     }
     
     func buttonSection() -> some View {
@@ -83,12 +84,48 @@ extension ContentView {
                     VariantButtonsView.getVariantButton(.rounded, action: {
                         print("button rounded")
                     }, label: "Button 4", backgroundColor: .red)
-                  
+                    
                     VariantButtonsView.getVariantButton(.standard, action: {
                         print("button shadowed")
                     }, label: "Button 5", backgroundColor: .random)
                     
                     
+                }
+            }
+        }
+        .frame(maxWidth: .infinity)
+        .background(Color.white)
+        .cornerRadius(10)
+        .shadow(radius: 5)
+    }
+    
+    func cardSection() -> some View {
+        VStack(alignment: .leading, spacing: 10) {
+            titleSection("Cards")
+            ScrollView(.horizontal) {
+                HStack(spacing: 10) {
+                    VariantCardView(
+                        title: "Variante con fondo azul",
+                        description: "Descripción en azul",
+                        content: "Contenido",
+                        footer: "Pie de página",
+                        backgroundColor: .blue,
+                        titleColor: .white,
+                        descriptionColor: .blue,
+                        contentColor: .black,
+                        footerColor: .white
+                    )
+                    VariantCardView(
+                        title: "Título Personalizado",
+                        description: "Una descripción detallada del componente",
+                        content: "Contenido adicional",
+                        footer: "Pie de página informativo",
+                        backgroundColor: .green,
+                        titleColor: .white,
+                        descriptionColor: .gray,
+                        contentColor: .black,
+                        footerColor: .white
+                    )
                 }
             }
         }
