@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		64D06F012AFD3D550000AFD6 /* BumpLightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D06F002AFD3D550000AFD6 /* BumpLightView.swift */; };
 		762487682AF9E0E400350842 /* VariantUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762487672AF9E0E400350842 /* VariantUIApp.swift */; };
 		7624876A2AF9E0E400350842 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762487692AF9E0E400350842 /* ContentView.swift */; };
 		7624876C2AF9E0E500350842 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7624876B2AF9E0E500350842 /* Assets.xcassets */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		64D06F002AFD3D550000AFD6 /* BumpLightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BumpLightView.swift; sourceTree = "<group>"; };
 		762487642AF9E0E400350842 /* VariantUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VariantUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		762487672AF9E0E400350842 /* VariantUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VariantUIApp.swift; sourceTree = "<group>"; };
 		762487692AF9E0E400350842 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -42,6 +44,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		64D06EFE2AFD3B3A0000AFD6 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				64D06F002AFD3D550000AFD6 /* BumpLightView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 		7624875B2AF9E0E400350842 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +91,7 @@
 		762487752AF9E16800350842 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				64D06EFE2AFD3B3A0000AFD6 /* Login */,
 				76ADCD282AFC982E00468A79 /* Animations */,
 				7624877D2AF9E8A600350842 /* ContentView */,
 				76ADCD222AFC812D00468A79 /* Buttons */,
@@ -221,6 +232,7 @@
 				762487682AF9E0E400350842 /* VariantUIApp.swift in Sources */,
 				762487782AF9E18500350842 /* VariantShapesViews.swift in Sources */,
 				76ADCD242AFC814400468A79 /* VariantButtonsView.swift in Sources */,
+				64D06F012AFD3D550000AFD6 /* BumpLightView.swift in Sources */,
 				76ADCD272AFC917600468A79 /* VariantCardView.swift in Sources */,
 				7624877C2AF9E55E00350842 /* Extension+Color.swift in Sources */,
 			);

@@ -84,12 +84,16 @@ struct CircleLoadingAnimation: View {
         
     }
 }
-/*struct CircleLoadingAnimation_Previews: PreviewProvider {
- static var previews: some View {
- CircleLoadingAnimation()
- }
- }
- */
-#Preview {
-    CircleLoadingAnimation()
+
+/* XCODE < 15 */
+struct CircleLoadingAnimation_Previews: PreviewProvider {
+    static var previews: some View {
+        CircleLoadingAnimation()
+    }
 }
+
+/* XCODE >=15 */
+//#Preview {
+//    CircleLoadingAnimation()
+//}
+

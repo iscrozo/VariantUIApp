@@ -64,7 +64,9 @@ struct VariantCardView: View {
     }
 }
 
-/*struct VariantCardView_Previews: PreviewProvider {
+
+/* XCODE < 15 */
+struct VariantCardView_Previews: PreviewProvider {
     static var previews: some View {
         VariantCardView(
             title: "Card title #1",
@@ -74,13 +76,17 @@ struct VariantCardView: View {
         )
     }
 }
-*/
 
-#Preview {
-    VariantCardView(
-        title: "Card title #1",
-        description: "Card description",
-        content: "Card content",
-        footer: "Card footer"
-    )
-}
+/* XCODE >=15 */
+//#Preview {
+//    VariantCardView(
+//        title: "Card title #1",
+//        description: "Card description",
+//        content: "Card content",
+//        footer: "Card footer"
+//    )
+//}
+//}
+
+
+
