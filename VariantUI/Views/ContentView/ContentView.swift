@@ -102,7 +102,7 @@ extension ContentView {
     func cardSection() -> some View {
         
         customContainerView {
-            titleSection("Shape Colors")
+            titleSection("Cards")
             ScrollView(.horizontal) {
                 HStack(spacing: 5) {
                     VariantCardView(
