@@ -15,6 +15,7 @@
 		7624877C2AF9E55E00350842 /* Extension+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7624877B2AF9E55E00350842 /* Extension+Color.swift */; };
 		76ADCD242AFC814400468A79 /* VariantButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76ADCD232AFC814400468A79 /* VariantButtonsView.swift */; };
 		76ADCD272AFC917600468A79 /* VariantCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76ADCD262AFC917600468A79 /* VariantCardView.swift */; };
+		76ADCD2A2AFC984500468A79 /* CircleLoadingAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76ADCD292AFC984500468A79 /* CircleLoadingAnimation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		7624877B2AF9E55E00350842 /* Extension+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Color.swift"; sourceTree = "<group>"; };
 		76ADCD232AFC814400468A79 /* VariantButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VariantButtonsView.swift; sourceTree = "<group>"; };
 		76ADCD262AFC917600468A79 /* VariantCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VariantCardView.swift; sourceTree = "<group>"; };
+		76ADCD292AFC984500468A79 /* CircleLoadingAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleLoadingAnimation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		762487752AF9E16800350842 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				76ADCD282AFC982E00468A79 /* Animations */,
 				7624877D2AF9E8A600350842 /* ContentView */,
 				76ADCD222AFC812D00468A79 /* Buttons */,
 				76ADCD252AFC916800468A79 /* Cards */,
@@ -133,6 +136,14 @@
 				76ADCD262AFC917600468A79 /* VariantCardView.swift */,
 			);
 			path = Cards;
+			sourceTree = "<group>";
+		};
+		76ADCD282AFC982E00468A79 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				76ADCD292AFC984500468A79 /* CircleLoadingAnimation.swift */,
+			);
+			path = Animations;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,6 +217,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7624876A2AF9E0E400350842 /* ContentView.swift in Sources */,
+				76ADCD2A2AFC984500468A79 /* CircleLoadingAnimation.swift in Sources */,
 				762487682AF9E0E400350842 /* VariantUIApp.swift in Sources */,
 				762487782AF9E18500350842 /* VariantShapesViews.swift in Sources */,
 				76ADCD242AFC814400468A79 /* VariantButtonsView.swift in Sources */,

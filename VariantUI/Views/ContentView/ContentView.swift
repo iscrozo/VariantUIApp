@@ -9,14 +9,17 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        ZStack {
-            ScrollView {
-                VStack (alignment: .leading, spacing: 30) {
-                    headerSection()
-                    shapesSection()
-                    buttonSection()
-                    cardSection()
-                }.padding(.horizontal,10)
+        NavigationView {
+            ZStack {
+                ScrollView {
+                    VStack (alignment: .leading, spacing: 30) {
+                        headerSection()
+                        shapesSection()
+                        buttonSection()
+                        cardSection()
+                        navigateButtons()
+                    }.padding(.horizontal,10)
+                }
             }
         }
     }
@@ -139,6 +142,31 @@ extension ContentView {
         }
         
         
+    }
+    
+    func navigateButtons() -> some View {
+        customContainerView {
+            titleSection("Animations")
+            ScrollView(.horizontal) {
+                
+                NavigationLink(destination: CircleLoadingAnimation()) {
+                    HStack(alignment: .center, spacing: 10) {
+                        Text("Animation Circle")
+                            .foregroundColor(.white)
+                            .fontWeight(.bold)
+                            .padding([.top, .bottom, .leading], 10 )
+                            .padding(.trailing, 1)
+                        
+                        Image(systemName: "arrow.right")
+                            .foregroundColor(.white)
+                            .padding(.trailing, 10)
+                    }   .background(Color.blue)
+                        .cornerRadius(10)
+                }
+                
+                
+            }.padding(5)
+        }
     }
 }
 
