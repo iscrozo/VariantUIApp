@@ -149,19 +149,37 @@ extension ContentView {
             titleSection("Animations")
             ScrollView(.horizontal) {
                 
-                NavigationLink(destination: CircleLoadingAnimation()) {
-                    HStack(alignment: .center, spacing: 10) {
-                        Text("Animation Circle")
-                            .foregroundColor(.white)
-                            .fontWeight(.bold)
-                            .padding([.top, .bottom, .leading], 10 )
-                            .padding(.trailing, 1)
-                        
-                        Image(systemName: "arrow.right")
-                            .foregroundColor(.white)
-                            .padding(.trailing, 10)
-                    }   .background(Color.blue)
-                        .cornerRadius(10)
+                HStack( spacing: 10) {
+                    NavigationLink(destination: CircleLoadingAnimation()) {
+                        HStack(alignment: .center, spacing: 10) {
+                            Text("Animation Circle")
+                                .foregroundColor(.white)
+                                .fontWeight(.bold)
+                                .padding([.top, .bottom, .leading], 10 )
+                                .padding(.trailing, 1)
+                            
+                            Image(systemName: "arrow.right")
+                                .foregroundColor(.white)
+                                .padding(.trailing, 10)
+                        }   .background(Color.blue)
+                            .cornerRadius(10)
+                    }
+                    
+                    NavigationLink(destination: BumpLightView()) {
+                        HStack(alignment: .center, spacing: 10) {
+                            Text("Animation Circle")
+                                .foregroundColor(.white)
+                                .fontWeight(.bold)
+                                .padding([.top, .bottom, .leading], 10 )
+                                .padding(.trailing, 1)
+                            
+                            Image(systemName: "arrow.right")
+                                .foregroundColor(.white)
+                                .padding(.trailing, 10)
+                        }   .background(Color.blue)
+                            .cornerRadius(10)
+                    }
+
                 }
                 
                 
@@ -170,6 +188,15 @@ extension ContentView {
     }
 }
 
-#Preview {
-    ContentView()
+/* XCODE < 15 */
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
 }
+
+/* XCODE >=15 */
+//#Preview {
+//    ContentView()
+//}
+
