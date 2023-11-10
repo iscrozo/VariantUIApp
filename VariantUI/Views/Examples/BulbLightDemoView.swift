@@ -1,5 +1,5 @@
 //
-//  BumpLightView.swift
+//  BulbLightDemoView.swift
 //  VariantUI
 //
 //  Created by Sebastian Camilo Rozo  Rozo on 9/11/23.
@@ -8,7 +8,7 @@
 import SwiftUI
 
 
-struct BumpLightView : View {
+struct BulbLightDemoView : View {
     @State private var yOffset: CGFloat = 0
     @State private var isLightOn = false
 
@@ -33,6 +33,7 @@ struct BumpLightView : View {
                                 .delay(0.05 * Double(index))
                         )
                 }
+                
             }
             .offset(y: yOffset)
             .gesture(
@@ -45,18 +46,11 @@ struct BumpLightView : View {
                         isLightOn.toggle()
                     }
             )
-
+            .background(Color.black)
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
             RopeView(yOffset: $yOffset)
         }
-        .padding()
-        .overlay(
-            Circle()
-                .frame(width: 50, height: 50)
-                .foregroundColor(.white)
-                .offset(y: -25)
-                .opacity(0.7)
-        )
-        .background(Color.black.edgesIgnoringSafeArea(.top))
+        .background(Color.black)
     }
 }
 
@@ -82,6 +76,6 @@ struct RopeView: View {
 
 struct BumpLightView_Previews: PreviewProvider {
     static var previews: some View {
-        BumpLightView()
+        BulbLightDemoView()
     }
 }

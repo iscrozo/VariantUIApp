@@ -11,6 +11,7 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             ZStack {
+                Color.white
                 ScrollView {
                     VStack (alignment: .leading, spacing: 30) {
                         headerSection()
@@ -152,28 +153,43 @@ extension ContentView {
                 HStack( spacing: 10) {
                     NavigationLink(destination: CircleLoadingAnimation()) {
                         HStack(alignment: .center, spacing: 10) {
-                            Text("Animation Circle")
+                            Text("Rings")
                                 .foregroundColor(.white)
                                 .fontWeight(.bold)
                                 .padding([.top, .bottom, .leading], 10 )
                                 .padding(.trailing, 1)
                             
-                            Image(systemName: "arrow.right")
+                            Image(systemName: "circle.circle")
                                 .foregroundColor(.white)
                                 .padding(.trailing, 10)
                         }   .background(Color.blue)
                             .cornerRadius(10)
                     }
                     
-                    NavigationLink(destination: BumpLightView()) {
+                    NavigationLink(destination: BulbLightDemoView()) {
                         HStack(alignment: .center, spacing: 10) {
-                            Text("Animation Circle")
+                            Text("Demo1")
                                 .foregroundColor(.white)
                                 .fontWeight(.bold)
                                 .padding([.top, .bottom, .leading], 10 )
                                 .padding(.trailing, 1)
                             
-                            Image(systemName: "arrow.right")
+                            Image(systemName: "lightbulb.circle")
+                                .foregroundColor(.white)
+                                .padding(.trailing, 10)
+                        }   .background(Color.blue)
+                            .cornerRadius(10)
+                    }
+                    
+                    NavigationLink(destination: BulpLightView()) {
+                        HStack(alignment: .center, spacing: 10) {
+                            Text("BulpLight")
+                                .foregroundColor(.white)
+                                .fontWeight(.bold)
+                                .padding([.top, .bottom, .leading], 10 )
+                                .padding(.trailing, 1)
+                            
+                            Image(systemName: "lightbulb.2.fill")
                                 .foregroundColor(.white)
                                 .padding(.trailing, 10)
                         }   .background(Color.blue)
